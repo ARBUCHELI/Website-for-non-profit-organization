@@ -1,0 +1,2234 @@
+html {
+  background-color: #6B8E23;
+}
+
+body, html { /*Configuration of all the content of the page*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Courier New, monospace; /*Font type of all the content of the page*/
+  font-size: 12px;
+  color: white; /*Color of all the content of the page (dark grey*/
+}
+
+h1, h2, h3, h4, h5 { /*Configuration of the headers*/
+  margin: 0; 
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+  /*tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+}
+
+header {
+  text-align: center;
+}
+
+ul {
+  list-style: none; /*No bullet points*/
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  /*box-shadow: 0 5px 10px #808080; /*Adds a shadow in the bottom border of the box that contains the header*/
+  min-height: 56px;
+  transition: min-height 2s; /*Allows to eliminate the horizontal line for bigger viewports*/
+  background-color: #b5ce72;
+}
+
+.header__inner { /*Configuration of the header*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding-top: 2em;
+}
+
+/*
+ *
+ * Buttons
+ * 
+ */
+
+.language {
+  background-color: #ce9339;
+  border: solid;
+  border-color: #735d39;
+  border-radius: 5px;
+  color: #87CEEB;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Courier New, monospace;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.Blog_en_Español {
+  background-color: #ce9339;
+  border: solid;
+  border-color: #735d39;
+  border-radius: 5px;
+  color: #87CEEB;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Courier New, monospace;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.Blog_in_English {
+  background-color: #ce9339;
+  border: solid;
+  border-color: #735d39;
+  border-radius: 5px;
+  color: #87CEEB;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Courier New, monospace;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav { /*Configuration of the menu*/
+  width: 100%;
+  text-align: left;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.nav_bio { /*Configuration of the menu*/
+  width: 100%;
+  text-align: left;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.nav_ubicacion { /*Configuration of the menu*/
+  width: 100%;
+  text-align: left;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.nav_services { /*Configuration of the menu*/
+  width: 100%;
+  text-align: left;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.nav_juegos { /*Configuration of the menu*/
+  width: 100%;
+  text-align: left;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.nav__list { /*Configuration of the menu*/
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+.nav_bio ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+.nav_ubicacion ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+.nav_services ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+.nav_juegos ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+.nav ul ul li {
+ float:none;
+ width:150px
+}
+
+.nav_bio ul ul li {
+ float:none;
+ width:150px
+}
+
+.nav_ubicacion ul ul li {
+ float:none;
+ width:150px
+}
+
+.nav_services ul ul li {
+ float:none;
+ width:150px
+}
+
+.nav_juegos ul ul li {
+ float:none;
+ width:150px
+}
+
+.nav ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+.nav_bio ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+.nav_ubicacion ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+.nav_services ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+.nav_juegos ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+.nav ul li:hover > ul {
+ display:block;
+}
+
+.nav_bio ul li:hover > ul {
+ display:block;
+}
+
+.nav_ubicacion ul li:hover > ul {
+ display:block;
+}
+
+.nav_services ul li:hover > ul {
+ display:block;
+}
+
+.nav_juegos ul li:hover > ul {
+ display:block;
+}
+
+.nav__itema { /*Configuration of the items of the menu*/
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__itemb { /*Configuration of the items of the menu*/
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 110px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__itemc { /*Configuration of the items of the menu*/
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 140px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__itemd { /*Configuration of the items of the menu*/
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 140px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__iteme { /*Configuration of the items of the menu*/
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 110px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__itemf { /*Configuration of the items of the menu*/
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 120px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav__itemg { /*Configuration of the items of the menu*/
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav a { /*Configuration of the clickable items*/
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav_bio a { /*Configuration of the clickable items*/
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav_ubicacion a { /*Configuration of the clickable items*/
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav_services a { /*Configuration of the clickable items*/
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav_juegos a { /*Configuration of the clickable items*/
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav a:hover { /*Configuration of the clickable items when hovering over the items with the mouse*/
+  text-decoration: underline;
+  color: #87CEEB;
+  font-weight: bolder;
+}
+
+.nav_bio a:hover { /*Configuration of the clickable items when hovering over the items with the mouse*/
+  text-decoration: underline;
+  color: #ce9339;
+  font-weight: bolder;
+}
+
+.nav_ubicacion a:hover { /*Configuration of the clickable items when hovering over the items with the mouse*/
+  text-decoration: underline;
+  color: #cc3300;
+  font-weight: bolder;
+}
+
+.nav_services a:hover { /*Configuration of the clickable items when hovering over the items with the mouse*/
+  text-decoration: underline;
+  color: #cc99ff;
+  font-weight: bolder;
+}
+
+.nav_juegos a:hover { /*Configuration of the clickable items when hovering over the items with the mouse*/
+  text-decoration: underline;
+  color: #e6e600;
+  font-weight: bolder;
+}
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+main { /*Configuration of the content*/
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+  background-color: #8B0000;
+  color: white;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero { /*Configuration of the hero section*/
+  width: 100%;
+  position: relative;
+  background-image: url("https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/padre_alemania.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.hero article { /*Configuration of the article*/
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.herotitle {
+  color: #DAA520;
+ }
+
+/*
+ *
+ * Top News
+ *
+ */
+
+.top-news { /*Configuration of the .top-news section*/
+  max-height: 300px;
+  border-bottom: 1px solid #87CEEB;
+  padding: 1em;
+  width: 100%;
+}
+
+.news__title { /*Configuration of the news title*/
+  font-weight: bold;
+  border-bottom: 1px solid #87CEEB;
+  line-height: 24px;
+  font-size: 16px;
+  color: #87CEEB;
+}
+
+.top-news__item { /*Configuration of the top-news items*/
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+  color:white;
+  font-size: 1.25em;
+}
+
+.top-news__item:before { /*:before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.*/
+  content: "» ";
+  color: #DAA520;
+}
+
+.top-news__item:last-child { /*Eliminates the horizontal line from the last-child of the list*/
+  border-bottom: none;
+}
+
+.top-news__item a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5em inherit;
+}
+
+.top-news__item a:hover,
+.top-news__item a:active { /*The :active selector is used to select and style the active link. A link becomes active when you click on it. Tip: The :active selector can be used on all elements, not only links.*/
+  text-decoration: underline;
+  color: #87CEEB;
+}
+
+.news__more {
+  float: right; /*The element floats to the right of its container*/
+  font-size: 1em;
+  color: #DAA520;
+}
+
+/*
+ *
+ * Conferences billboard
+ *
+ */
+
+.conferences {
+  padding-top: 1em;
+  flex-grow: 1; /*The flex-grow property specifies how much the item will grow compared to others item inside that container. In other words, it is the ability of an item to grow compared to other items present inside the same container.*/
+}
+
+.conferences__table {
+  width: 95%;
+  border-collapse: collapse; /*The border-collapse property sets whether table borders should collapse into a single border or be separated as in standard HTML.*/
+}
+
+.conferences__table th,
+.conferences__table td {
+  padding: 1em; 
+}
+
+.conferences__table th {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: black;
+}
+
+.conferences__table tr:nth-child(odd) td { /*Odd and even are keywords that can be used to match child elements whose index is odd or even (the index of the first child is 1).*/
+  background-color: #BDB76B;
+  font-weight: bold;
+}
+
+.conferences__table tr:nth-child(even) td { /*Odd and even are keywords that can be used to match child elements whose index is odd or even (the index of the first child is 1).*/
+  background-color: #eceff1;
+  color: black;
+  font-weight: bold;
+}
+
+.conferences__table td:nth-child(3) { /*Locates the third td element to the right of the box*/
+  text-align: right;
+  font-weight: bold;
+}
+
+.conferences__table td:nth-child(2),
+.conferences__table td:nth-child(5) { /*Locate the second and fifth td element in the center*/
+  text-align: center;
+  font-weight: bold;
+}
+
+/*
+ *
+ * Section with pictures and logo.
+ *
+ */
+
+.images {
+  flex-grow: 1; /*/*The flex-grow property specifies how much the item will grow compared to others item inside that container. In other words, it is the ability of an item to grow compared to other items present inside the same container.*/
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  height: 50%;
+  width: 100%;
+}
+
+.biotopo__image1 {
+  margin-top: 5em;
+  margin-left: 45%;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  width: 75%;
+  padding: 5px;
+  border: solid;
+  background-color: #408000;
+  border-color: white;
+}
+
+.images .biotopo__image {
+  width: 91%;
+  height: auto;
+  border: solid;
+  border-radius: 5px;
+  border-color: #DAA520;
+}
+
+.images .biotopo__image2 {
+  width: 50%;
+  height: auto;
+  border: solid;
+  border-color: #DAA520;
+  border-radius: 5px;
+  margin-left: 6em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding: 5px;
+  background-color: #ccccb3;
+}
+
+/*
+ *
+ * Recent News
+ *
+ */
+
+.recent-news { /*Configuration of the recent news section*/
+  flex-grow: 1;
+  clear: both;
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+.section_snippets {
+  margin-bottom: 5em;
+}
+
+.snippet { /*Configuration of the snippet elements*/
+  clear: both;
+  margin: 24px 0;
+  color: white;
+}
+
+.snippet__thumbnail { /*Configuration of the snippet__thumbnail image*/
+  width: 120px;
+  height: 100px;
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: solid;
+  border-color: #87CEEB;
+  border-radius: 5px;
+}
+
+.snippet__title { /*Configuration of the title of the snippet*/
+  font-weight: 500;
+  color: white;
+}
+
+.snippet__title a { /*Configuration of the linkable titles of the news*/
+  text-decoration: none;
+  color: #9ACD32;
+  padding: 1.5em inherit;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.snippet__title a:hover, /*Configuration of the linkable titles of the news*/
+.snippet__title a:active {
+  text-decoration: underline;
+  color: #87CEEB;
+}
+
+.snippet p {
+  color: white;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.lista_servicios {
+  margin-right: 1em;
+  margin-left: 1em;
+  font-size: 1.5em;
+  font-family: Courier New, monospace;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 3em;
+  list-style-type: circle;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.logos {
+  margin-left: 11em;
+}
+
+.logos_biotopo {
+  margin-left: 13em;
+}
+
+.snippet__logos { /*Configuration of the snippet__thumbnail image*/
+  width: 120px;
+  height: 100px;
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: solid;
+  border-color: #87CEEB;
+  border-radius: 5px;
+  background-color: #b5ce72;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+/*Configuration of the footer*/
+
+footer {
+  border-top: 1px solid #87CEEB;
+  padding: 1em;
+  width: 100%;
+  background-color: #ce9339;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #DCDCDC;
+  padding: 1.5em;
+  font-size: 1.5em;
+}
+
+.content { /*The CSS flex-wrap property is used to specify whether flex items are forced into a single line or wrapped onto multiple lines. */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none; /*display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them.*/
+}
+
+.hero, .top-news, .conferences, .images, .recent-news {
+  order: 10; /*The order CSS property sets the order to lay out an item in a flex or grid container.*/
+}
+
+.titulo_descripcion {
+  text-align: center;
+  font-size: 4em;
+  margin: 0px auto;
+  display; block;
+  padding-top: 0.5em;
+  padding-bottom: 0.4em;
+  color: #264d00;
+  font-weight: bolder;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopodesc {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoadesc {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.descripcion1 {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 60%;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #e6e6ff;
+}
+
+.fotoedit {
+  border: solid;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.fotoedit {
+  width: 100%;
+}
+
+.fotoedit1 {
+  border: solid;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.fotoedit1 {
+  width: 100%;
+}
+
+.figbiotopo1 {
+   text-align: justify;
+   font-size: 1.2em;
+   color: #2f4c58;
+   font-weight: bold;
+}
+
+.figbiotopo1a {
+   text-align: justify;
+   font-size: 1.2em;
+   color: #e6e6ff;
+}
+
+.second-letter1 {
+  color: #cc3300;
+  font-weight: bolder;
+}
+
+.second-letter1a {
+  color: #b3e6ff;
+  font-weight: bolder;
+}
+
+.figbiotopo2 {
+   text-align: justify;
+   font-size: 1.2em;
+   color: #6e93d6;
+   font-weight: bold;
+}
+
+.figbiotopo2a {
+   text-align: justify;
+   font-size: 1.2em;
+   color: #e6e6ff;
+}
+
+.second-letter {
+  color: #ce9339;
+  font-weight: bolder;
+}
+
+.second-lettera {
+  color: #b3e6ff;
+  font-weight: bolder;
+}
+
+.figbiotopo3 {
+   text-align: justify;
+   font-size: 1.2em;
+   color: white;
+   font-weight: bold;
+}
+
+.figbiotopo3a {
+   text-align: justify;
+   font-size: 1.2em;
+   color: #e6e6ff;
+}
+
+.paragrafo_biotopobdesc {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.titulo_historia {
+  text-align: center;
+  font-size: 4em;
+  margin: 0px auto;
+  display; block;
+  color: #264d00;
+  font-weight: bolder;
+  margin-top: 0.5em;
+  font-family: Courier New, monospace;
+}
+
+.aarticle {
+  border: solid;
+  border-color: #ccccb3;
+  background-color: #111b1e;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 4em;
+}
+
+.subtitulos {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1em;
+  display; block;
+  color: #ccccb3;
+  font-weight: bolder;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopohist {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoahist {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.general1 {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 60%;
+  background-color: #cca300;
+  padding: 1em;
+  border: solid;
+  border-color: #6e93d6;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.general1a {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 50%;
+  background-color: #cca300;
+  padding: 1em;
+  border: solid;
+  border-color: #6e93d6;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+
+.general1b {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #cca300;
+  padding: 1em;
+  border: solid;
+  border-color: #6e93d6;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.general2 {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 60%;
+  background-color: #003333;
+  padding: 1em;
+  border: solid;
+  border-color: #666633;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.general2a {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #003333;
+  padding: 1em;
+  border: solid;
+  border-color: #666633;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.general2aa {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 50%;
+  background-color: #003333;
+  padding: 1em;
+  border: solid;
+  border-color: #666633;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+
+.general3 {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 60%;
+  background-color: #b32d00;
+  padding: 1em;
+  border: solid;
+  border-color: #6e93d6;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.paragrafo_biotopobhist {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 4em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.barticle {
+  border: solid;
+  border-color: #ccccb3;
+  background-color: #111b1e;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  margin-top: 5em;
+}
+
+.paragrafo_biotopoacontact {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopobcontact {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoccontact {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.carticle {
+  border: solid;
+  border-color: #ccccb3;
+  background-color: #111b1e;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  margin-top: 5em;
+}
+
+.paragrafo_biotopoacultiv {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopobcultiv {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoccultiv {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.row {
+  background-color: #111b1e;
+  text-align: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-color: #6e93d6;
+  border-radius: 5px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  height: 70%;
+  padding-left: 0.5em;
+}
+
+.figisrael {
+   text-align: justify;
+   font-size: 1.2em;
+   color: white;
+   font-weight: bold;
+}
+
+.israel {
+  background-color: #b32d00;
+  padding: 1em;
+  border-radius: 5px;
+  border: solid;
+  border-color: #666633;
+  border-radius: 5px;
+}
+
+.paragrafo_biotopodcultiv {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoecultiv {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopofcultiv {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  margin-bottom: 2em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoccultiv {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  margin-bottom: 4em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.darticle {
+  border: solid;
+  border-color: #ccccb3;
+  background-color: #111b1e;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  margin-top: 5em;
+}
+
+.paragrafo_biotopoasumerg {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopobsumerg {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopocsumerg {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 4em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.earticle {
+  border: solid;
+  border-color: #ccccb3;
+  background-color: #111b1e;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  margin-top: 5em;
+}
+
+.paragrafo_biotopoanace {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopobnace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopocnace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopodnace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoenace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopofnace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopognace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopohnace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoinace {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopocnace {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 4em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #b3ffff;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.farticle {
+  border: solid;
+  border-color: #ccccb3;
+  background-color: #111b1e;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 4em;
+  margin-top: 5em;
+}
+
+.paragrafo_biotopoallegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopobllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopocllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopodllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoellegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopofllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopogllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopohllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopoillegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopojllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.violencia4 {
+  margin-left: 18%;
+  border-radius: 5px;
+  width: 60%;
+  background-color: #cca300;
+  padding: 1em;
+  border: solid;
+  border-color: #6e93d6;
+  border-radius: 5px;
+}
+
+.paragrafo_biotopokllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopolllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+.paragrafo_biotopocllegada {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 4em;
+  font-size: 1.35em;
+  text-align: justify;
+  color: #ce9339;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo_ubicacion {
+  text-align: center;
+  font-size: 4em;
+  margin: 0px auto;
+  display; block;
+  padding-top: 0.5em;
+  padding-bottom: 0.4em;
+  color: #e6b800;
+  font-weight: bold;
+  font-family: Courier New, monospace;
+}
+
+.titulo_servicios {
+  text-align: center;
+  font-size: 4em;
+  margin: 0px auto;
+  display; block;
+  padding-top: 0.5em;
+  padding-bottom: 0.4em;
+  color: #ffcc00;
+  font-weight: bold;
+  font-family: Courier New, monospace;
+}
+
+.titulo_juegos {
+  text-align: center;
+  font-size: 4em;
+  margin: 0px auto;
+  display; block;
+  padding-top: 0.5em;
+  padding-bottom: 0.4em;
+  color: #ffcc00;
+  font-weight: bold;
+  font-family: Courier New, monospace;
+}
+
+.titulo_juegos1 {
+  text-align: center;
+  font-size: 4em;
+  margin: 0px auto;
+  display; block;
+  padding-top: 0.5em;
+  padding-bottom: 0.4em;
+  color: #ffcc00;
+  font-weight: bold;
+  font-family: Courier New, monospace;
+}
+
+
+
+
+.ubicacion1 {
+  margin-top: 1em;
+  margin-left: 28%;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  width: 40%;
+  background-color: #e4dbd9;
+  padding: 1em;
+  border: solid;
+  border-color: #6e93d6;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+.figbiotopo {
+   text-align: justify;
+   font-size: 1.2em;
+   color: #0099cc;
+   font-weight: bold;
+}
+
+.figubicacion {
+   text-align: justify;
+   font-size: 1.2em;
+   color: #2f4c58;
+   font-weight: bold;
+}
+
+
+
+
+
+
+
+.paragrafo_biotopo2ruralesa {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 3em;
+  font-size: 1.6em;
+  text-align: justify;
+  color: #ff5c33;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paragrafo_biotopo2f {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 3em;
+  font-size: 1.6em;
+  text-align: justify;
+  color: #ff5c33;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+
+
+
+
+
+.paragrafo_biotopo2a {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.6em;
+  text-align: justify;
+  color: #ff5c33;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+}
+
+
+
+
+
+
+
+
+
+.first-letter {
+  font-size: 35px;
+  color: #63a583;
+  font-weight: bold;
+}
+
+
+
+
+
+.second-letter-exp {
+  color: #2f4c58;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.israelphoto {
+  border-color: #8a8a5c;
+  border-radius: 5px;
+}
+
+
+
+.españa {
+  background-color: #6e93d6;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 3em;
+
+}
+
+.figisrael {
+  text-align: justify;
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+
+.figespaña {
+  text-align: justify;
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+
+.figberlin {
+  text-align: justify;
+  font-size: 1.2em;
+  padding-top: 1em;
+  color: white;
+}
+
+.figsenior {
+  text-align: justify;
+  font-size: 1.2em;
+  padding-top: 1em;
+  color: white;
+}
+
+.españaphoto {
+  border-color: #8a8a5c;
+  border-radius: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pie {
+  background-color: #63a583;
+  margin-top: 15em;
+}
+
+.pieubicacion {
+  background-color: #992600;
+  margin-top: 11em;
+}
+
+.pielocation {
+  background-color: #992600;
+  margin-top: 14em;
+}
+
+.pieservicios {
+  background-color: #669999;
+  margin-top: 11em;
+}
+
+.piejuegos {
+  background-color: #669999;
+  margin-top: 12em;
+}
+
+.main_biotopo {
+  background-color: #ce9339;
+}
+
+.main_ubicacion {
+  background-color: #662200;
+}
+
+.main_servicios {
+  background-color: #33334d;
+}
+
+.main_costos {
+  background-color: #003333;
+}
+
+.separator {
+  border: 25px solid #6B8E23;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.26);
+}
+
+.miniseparator {
+  border: none;
+  height: 24px;
+  width: 120px;
+  background: url('https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/hr.png') center center no-repeat;
+  margin: 20px auto;
+}
+
+.article {
+  border: solid;
+  border-color: #ccccb3;
+  background-color: #111b1e;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 4em;
+}
+
+.article1 {
+  border: solid;
+  border-color: #00cccc;
+  background-color: #cca300;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 1em;
+}
+
+.article2 {
+  border: solid;
+  border-color: #00cccc;
+  background-color: #004466;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 3em;
+}
+
+.article3 {
+  border: solid;
+  border-color: #00cccc;
+  background-color: #992600;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 3em;
+}
+
+.article_serv1 {
+  border: solid;
+  border-color: #e6e6e6;
+  background-color: #992600;
+  border-radius: 5px;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 1em;
+}
+
+.article_servlist_esp {
+  border: solid;
+  border-color: #e6e6e6;
+  background-color: #b35900;
+  border-radius: 5px;
+  margin-left: 23%;
+  margin-right: 4em;
+  margin-bottom: 1em;
+}
+
+.costos_container {
+  border: solid;
+  border-color: white;
+  background-color: #cc5233;
+  border-radius: 5px;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+}
+
+.article_servlist_eng {
+  border: solid;
+  border-color: #e6e6e6;
+  background-color: #b35900;
+  border-radius: 5px;
+  margin-left: 14%;
+  margin-right: 4em;
+  margin-bottom: 1em;
+}
+
+.paragrafo_ubicacion {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.3em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+  color: #004080;
+  font-weight: bold;
+}
+
+.advertencia_ubicacion {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.3em;
+  text-align: justify;
+  font-family: Courier New, monospace;
+  font-weight: bold;
+  color: black;
+}
+
+.paragrafo_serv1 {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.3em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+  color: #e6e6e6;
+}
+
+.paragrafo_costos1 {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 2em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+  color: white;
+}
+
+.paragrafo_ubicacion1 {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.3em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+  color: #cca300;
+  font-weight: bold;
+}
+
+.paragrafo_ubicacion2 {
+  margin-right: 2em;
+  margin-left: 2em;
+  font-size: 1.3em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Courier New, monospace;
+  color: white;
+  font-weight: bold;
+}
+
+.ubicacion {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 8%;
+  border-radius: 5px;
+  width: 84%;
+}
+
+.mapa2 {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 850px) {
+  .hero {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .header {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .header__title {
+    font-size: 3em;
+  }
+}
+
+
+@media screen and (max-width: 702px) {
+  .header__title {
+    font-size: 2em;
+  }
+  .header {
+    padding-bottom: 3em;
+  }
+  .nav a {
+    font-size: 1.5em;
+  }
+  .nav_bio a {
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 552px) {
+  .header__title {
+    font-size: 1.9em;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .header__title {
+    font-size: 1.9em;
+  }
+  .nav a {
+    font-size: 1em;
+  }
+  .nav_bio a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 549px) { /*Media query for changing style*/
+  .header__logo {
+    height: 48px;
+    margin-right: 0.5em;
+  }
+  .header__title {
+    margin-left: 0;
+    font-size: 2em;
+    vertical-align: bottom; 
+  }
+  .nav {
+    z-index: 10; /*The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).*/
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /*This trasform moves the drawer off canvas.*/
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /*Optionally, we animate the drawer.*/
+    transition: transform 2s ease;
+  }
+  .nav_bio {
+    z-index: 10; /*The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).*/
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /*This trasform moves the drawer off canvas.*/
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /*Optionally, we animate the drawer.*/
+    transition: transform 2s ease;
+  }
+  .nav.open { /*Uses the open class for translating the menu to the position 0*/
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header__menu svg {
+    width: 32px;
+    fill: #E0E0E0; /*The fill property in CSS is for filling in the color of a SVG shape with color light grey.*/
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .hero {
+    order: 0;
+    width: 60%;
+  }
+  .images {
+    order: 1;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .header__title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    order: 1;
+    width: 50%;
+  }
+  .conferences {
+    order: 2;
+    width: 60%;
+  }
+  .images {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main, .header__inner, .nav, .nav_bio, .nav_ubicacion, .nav_services, .nav_juegos, .content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+   .header__title {
+    font-size: 1.2em;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+ }
+
+ 

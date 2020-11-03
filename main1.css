@@ -1,0 +1,46 @@
+div.copyMe {
+	content: url(https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/sloth.png);
+	padding: 0px;
+	position: absolute; /*This allows to move the blocks around*/
+	cursor:pointer;
+	overflow:hidden;
+}
+
+div.copyMe {
+	width: 80px;
+	height: 80px;
+}
+
+.caja {
+	width: 50%;
+	height: 80%;
+	border: solid 10px white;
+	border-radius: 5px;
+	background-color: green;
+	margin-bottom: 4em;
+	background-image: url("https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/tree.png");
+  	background-color: #cccccc;
+  	height: 500px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+.newb {
+	color: red;
+}
+
+#garbage {
+	position: absolute;
+	height: 20%;
+	width: 15%;
+	background-color: black;
+	left: 15em;
+	top: 25em;
+	padding: 0px;
+	border-radius: 5px;
+}
+
+
+

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"> <!--encoding -->
+        <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Used to take control over the viewport -->
+        <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).-->
+        <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Used for compatibility with Internet Explorer -->
+        <title>Biotopo Selva Húmeda Foundation</title> <!-- Title -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css"> <!-- For Google Fonts API -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css"> <!-- Link to css -->
+    </head>
+
+    <body>
+        <header class="header"> <!-- Container with the header -->
+            <div class="header__inner">
+                <img class="title" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/new_logo.jpg">
+                <a id="menu" class="header__menu"> <!--This part implements the hamburguer menu-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <!--svg is a container for svg graphics, the viewBox attribute makes the icon of the menu to fit a particular container and path means that the path will be scaled.-->
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                    </svg>
+                </a>
+                <button class="language" onclick="window.location.href='inicio.html';">
+                    PÁGINA EN ESPAÑOL
+                </button>
+                <button class="Blog_en_Español" onclick="window.location.href='#';">
+                    BLOG EN ESPAÑOL
+                </button>
+                <button class="Blog_in_English" onclick="window.location.href='#';">
+                    BLOG IN ENGLISH
+                </button>
+            </div>
+        </header>
+
+        <nav id="drawer" class="nav_ubicacion"> <!--Menu-->
+            <ul class="nav__list"> <!--Unordered list with the items of the Menu.-->
+                <li class="nav__itemaa"><a href="home.html">Home</a></li> <!--Each item of the menu is a clickable link.-->
+                <li class="nav__itembb"><a href="biotopo_english.html">Biotopo</a></li>
+                <ul>
+                    <li><a href="#">Historia</a></li>
+                </ul>
+                <li class="nav__itemcc"><a href="location.html">Location</a></li>
+                <li class="nav__itemdd"><a href="services.html">Services</a></li>
+                <li class="nav__itemee"><a href="games.html">Games</a></li>
+                <li class="nav__itemff"><a href="#">Species</a></li>
+                <li class="nav__item1"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main_ubicacion"> <!--Main section of the page divided in different sections.-->
+
+            <section class="content">
+                <article class="caja_ubicacion1">
+                    <h1 class="titulo_ubicacion">LOCATION</h1>
+                    <article class="article1">
+                        <p class = "paragrafo_ubicacion">The Biotopo Selva Húmeda Natural Reserve is located in the south of the Republic of Colombia and in the western part of the Department of Nariño, on the road that leads to the city of Tumaco from the city of Pasto.  This road is located in the coastal foothills of the Department of Nariño, 202 km from the city of Pasto and 95 km from the city of Tumaco, on an altitude gradient of 440 to 610 meters above sea level, with a tropical climate of 24 degrees and an area of approximately 2,000 hectares.</p>
+                        <p class = "advertencia_ubicacion">Please use the (+) and (-) buttons in the interactive map to see the exact location of the Biotopo Selva Húmeda Natural Reserve.</p>
+                        <iframe class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5863288296746!2d-78.23496648524589!3d1.423888898961546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjUnMjYuMCJOIDc4wrAxMyc1OC4wIlc!5e0!3m2!1sen!2sru!4v1598956821179!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </article>
+                </article>
+
+                <article class="caja_ubicacion2">
+                    <h2 class="titulo_ubicacion">HOW TO GET THERE</h2>
+                    <article class="article2">
+                        <p class = "paragrafo_ubicacion1">From the city of San Juan de Pasto to the Biotopo Selva Húmeda Natural Reserve, it is possible to travel by the Pan-American Highway to the city of Tumaco in a 4-hour trip to El Diviso, municipality of Berlin, km 95. It is possible to travel by private transportation or different public transportation alternatives.  The public transport service is provided by six prestigious inter-municipal transport companies in Nariño.</p>  
+                        <figure class="ubicacion1">
+                            <img class="mapa2" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/como_llegar.jpg" alt="ubicación nariño">
+                            <figcaption class="figbiotopo"><span class="second-letter">Fig.1</span> - Pasto - Tumaco Road.</figcaption>
+                        </figure>
+                    </article>
+                </article>
+
+                <article class="caja_ubicacion3">
+                    <article class="article3">
+                        <p class = "paragrafo_ubicacion2">From the city of San Andrés de Tumaco, it is possible to travel along the Panaericana Highway for two hours.</p>  
+                        <figure class="ubicacion2">
+                            <img class="mapa2" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/Reserva-Natural-Biotopo-Selva-Humeda-Tumaco-Narino-2.jpg" alt="ubicación nariño">
+                            <figcaption class="figbiotopo1"><span class="second-letter">Fig.2</span> - Biotopo Selva Húmeda Natural Reserve.</figcaption>
+                        </figure>
+                    </article>
+                </article>
+            </section>
+
+            <div class="logos_biotopo">
+                <img class="snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/first_logo.png">
+                <img class="snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/second_logo.png">
+                <img class= "snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/third_logo.png">
+                <img class="snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/new_logo.jpg">
+            </div>
+
+            <footer class="pielocation"> <!--Footer.  Each title is linkable.-->
+                <section id="contact" class="contact-section">
+                    <div class="contact-links">
+                        <a href="#" target="_blank" class="btn contact-details">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+                        </a>
+                        <a href="mailto:radio_seattle@hotmail.com" class="btn contact-details">
+                            <i class="fa fa-at" aria-hidden="true"></i> Email us
+                        </a>
+                        <a href="#" target="_blank" class="btn contact-details">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                        </a>
+                        <a href="tel:+79601847870" class="btn contact-details">
+                            <i class="fa fa-rss" aria-hidden="true"></i> Call us
+                        </a>
+                    </div>
+                </section>
+            </footer>
+
+        </main>
+
+        <script> //JavaScript code//
+            /*
+             * Open the drawer when the menu ison is clicked. 
+             */
+            var menu = document.querySelector('#menu'); //JavaScript querySelector method.//
+            var main = document.querySelector('main'); //JavaScript querySelector method.//
+            var drawer = document.querySelector('.nav'); //JavaScript querySelector method.//
+
+            menu.addEventListener('click', function(e) { //EventListener that activates a function when clicked.  e is the short reference for event//
+              drawer.classList.toggle('open'); //Toggle the open class to the class drawer.//
+              e.stopPropagation(); //Stop deploying of the menu when the icon with the hamburger menu is clicked.
+            });
+            main.addEventListener('click', function() { 
+              drawer.classList.remove('open'); //Removes the class open from drawer.//
+            });
+        </script>
+      
+    </body>
+</html>
+
+

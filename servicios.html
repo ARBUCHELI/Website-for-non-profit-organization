@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"> <!--encoding -->
+        <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Used to take control over the viewport -->
+        <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).-->
+        <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Used for compatibility with Internet Explorer -->
+        <title>Fundación Biotopo Selva Húmeda</title> <!-- Title -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css"> <!-- For Google Fonts API -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css"> <!-- Link to css -->
+    </head>
+
+    <body>
+        <header class="header"> <!-- Container with the header -->
+            <div class="header__inner">
+                <img class="title" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/new_logo.jpg">
+                <a id="menu" class="header__menu"> <!--This part implements the hamburguer menu-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <!--svg is a container for svg graphics, the viewBox attribute makes the icon of the menu to fit a particular container and path means that the path will be scaled.-->
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                    </svg>
+                </a>
+                <button class="language" onclick="window.location.href='home.html';">
+                    GO TO SITE IN ENGLISH
+                </button>
+                <button class="Blog_en_Español" onclick="window.location.href='#';">
+                    BLOG EN ESPAÑOL
+                </button>
+                <button class="Blog_in_English" onclick="window.location.href='#';">
+                    BLOG IN ENGLISH
+                </button>
+            </div>
+        </header>
+
+        <nav id="drawer" class="nav_services"> <!--Menu-->
+            <ul class="nav__list"> <!--Unordered list with the items of the Menu.-->
+                <li class="nav__itema"><a href="inicio.html">Inicio</a></li> <!--Each item of the menu is a clickable link.-->
+                <li class="nav__itemb"><a href="biotopo.html">Biotopo</a></li>
+                <li class="nav__itemc"><a href="ubicacion.html">Ubicación</a></li>
+                <li class="nav__itemd"><a href="servicios.html">Servicios</a></li>
+                <li class="nav__iteme"><a href="juegos.html">Juegos</a></li>
+                <li class="nav__itemf"><a href="#">Especies</a></li>
+                <li class="nav__itemg"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="main_servicios"> <!--Main section of the page divided in different sections.-->
+
+            <section class="content">
+                <h1 class="titulo_servicios">SERVICIOS</h1>
+                <article class="article_serv1">
+                    <p class = "paragrafo_serv1">La Reserva Natural Biotopo Selva Húmeda, cuenta con la infraestructura básica para atender a grupos de personas de entidades públicas y privadas que demanden un sitio apacible, relajante y con la logística para la realización de reuniones, recepciones y eventos como: seminarios, talleres, reuniones, retiros espirituales, etc.</p>
+                </article>
+
+                <figure class="ubicacion1">
+                    <img class="mapa2" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/caba%C3%B1a.jpg" alt="ubicación nariño">
+                    <figcaption class="figubicacion"><span class="second-letter">Fig.1</span> - Cabaña Principal.</figcaption>
+                </figure>
+
+                <article class="article_serv1">
+                    <p class = "paragrafo_serv1">La Reserva Naural Biotopo Selva Húmeda dispone de varias fuentes hídricas disponibles para prácticas de medicina alternativa como Hidroterapia; Geoterapia y Bio-sanación.  Los hospedajes cuentan con habitaciones sencillas y dobles, servicio de restaurante y una Maloca tradicional que sirve como punto de reencuentro del hombre con la naturaleza.</p>
+                </article>
+
+                <figure class="ubicacion1">
+                    <img class="mapa2" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/albergues.jpg" alt="ubicación nariño">
+                    <figcaption class="figubicacion"><span class="second-letter">Fig.2</span> - Albergues.</figcaption>
+                </figure>
+
+                <article class="article_serv1">
+                    <p class = "paragrafo_serv1">Alojamiento en ecoalbergue equipado con 10 habitaciones con capacidad para 20 personas.  Un cuarto por cada dos personas con closet y camarote con tendidos de algodón. Cuatro baterías sanitarias internas. Alumbrado con petromax o con velas. Alojamiento Opcional para parejas (cama doble) en la Maloca (Maloca de los Duendes), equipada con 4 habitaciones dobles.</p>
+                </article>
+
+                <article class="article_servlist_esp">
+                    <ul class = "lista_servicios">
+                        <li>Restaurante de leña y lavandería.</li>
+                        <li>Ecocaminatas.</li>
+                        <li>Avistamiento de aves.</li>
+                        <li>Recarga Bioenergética.</li>
+                        <li>Hidroterapia.</li>
+                        <li>Charlas ecopedagógicas.</li>
+                        <li>Ecocaminatas nocturnas y tertulias.</li>
+                        <li>Guía Turístico.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <div class="logos_biotopo">
+                <img class="snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/first_logo.png">
+                <img class="snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/second_logo.png">
+                <img class= "snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/third_logo.png">
+                <img class="snippet__logos" src="https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/Pictures/new_logo.jpg">
+            </div>
+
+            <footer class="pieservicios"> <!--Footer.  Each title is linkable.-->
+                <section id="contact" class="contact-section">
+                    <div class="contact-links">
+                        <a href="#" target="_blank" class="btn contact-details">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+                        </a>
+                        <a href="mailto:radio_seattle@hotmail.com" class="btn contact-details">
+                            <i class="fa fa-at" aria-hidden="true"></i> Escríbenos
+                        </a>
+                        <a href="#" target="_blank" class="btn contact-details">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                        </a>
+                        <a href="tel:+79601847870" class="btn contact-details">
+                            <i class="fa fa-rss" aria-hidden="true"></i> Llámanos
+                        </a>
+                    </div>
+                </section>
+            </footer>
+
+        </main>
+
+        <script> //JavaScript code//
+            /*
+             * Open the drawer when the menu ison is clicked. 
+             */
+            var menu = document.querySelector('#menu'); //JavaScript querySelector method.//
+            var main = document.querySelector('main'); //JavaScript querySelector method.//
+            var drawer = document.querySelector('.nav'); //JavaScript querySelector method.//
+
+            menu.addEventListener('click', function(e) { //EventListener that activates a function when clicked.  e is the short reference for event//
+              drawer.classList.toggle('open'); //Toggle the open class to the class drawer.//
+              e.stopPropagation(); //Stop deploying of the menu when the icon with the hamburger menu is clicked.
+            });
+            main.addEventListener('click', function() { 
+              drawer.classList.remove('open'); //Removes the class open from drawer.//
+            });
+        </script>
+        
+    </body>
+</html>
