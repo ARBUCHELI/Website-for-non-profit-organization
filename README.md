@@ -9,3 +9,5 @@ The web project looks very well in Desktop, Laptop, iPad Pro, iPad, iPhone, Gala
 The user can make click in the hamburguer menu to deploy the items of the menu.
 
 ![picture](https://raw.githubusercontent.com/ARBUCHELI/Website-for-non-profit-organization/master/portadagithub.jpg)
+
+# Author: Andrés R. Bucheli.
